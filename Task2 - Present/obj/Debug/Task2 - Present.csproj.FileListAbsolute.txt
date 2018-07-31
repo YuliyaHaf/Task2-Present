@@ -1,0 +1,14 @@
+C:\Users\Yuliya_Hafiyatulina\source\repos\Task2 - Present\Task2 - Present\obj\Debug\Task2 - Present.csprojResolveAssemblyReference.cache
+C:\Users\Yuliya_Hafiyatulina\source\repos\Task2 - Present\Task2 - Present\obj\Debug\Task2 - Present.csproj.CoreCompileInputs.cache
+C:\Users\Yuliya_Hafiyatulina\source\repos\Task2 - Present\Task2 - Present\bin\Debug\Task2 - Present.exe.config
+C:\Users\Yuliya_Hafiyatulina\source\repos\Task2 - Present\Task2 - Present\bin\Debug\Task2 - Present.exe
+C:\Users\Yuliya_Hafiyatulina\source\repos\Task2 - Present\Task2 - Present\bin\Debug\Task2 - Present.pdb
+C:\Users\Yuliya_Hafiyatulina\source\repos\Task2 - Present\Task2 - Present\obj\Debug\Task2 - Present.exe
+C:\Users\Yuliya_Hafiyatulina\source\repos\Task2 - Present\Task2 - Present\obj\Debug\Task2 - Present.pdb
+D:\Task2 - Present\Task2 - Present\bin\Debug\Task2 - Present.exe.config
+D:\Task2 - Present\Task2 - Present\bin\Debug\Task2 - Present.exe
+D:\Task2 - Present\Task2 - Present\bin\Debug\Task2 - Present.pdb
+D:\Task2 - Present\Task2 - Present\obj\Debug\Task2 - Present.csproj.CoreCompileInputs.cache
+D:\Task2 - Present\Task2 - Present\obj\Debug\Task2 - Present.exe
+D:\Task2 - Present\Task2 - Present\obj\Debug\Task2 - Present.pdb
+D:\Task2 - Present\Task2 - Present\obj\Debug\Task2 - Present.csprojAssemblyReference.cache

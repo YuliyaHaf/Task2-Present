@@ -10,7 +10,7 @@ namespace Task2___Present
         public void MainMenu ()
         {
             int choice = -1;            
-            Console.WriteLine("Create your own present!");
+            Console.WriteLine("Create your own present!\n");
 
             while (choice != 0)
             {
@@ -19,7 +19,7 @@ namespace Task2___Present
                 Console.WriteLine("2. Display the present content");
                 Console.WriteLine("3. Find a sweet by weight");
                 Console.WriteLine("4. Sort sweets by price");
-                Console.WriteLine("0. Exit");
+                Console.WriteLine("0. Exit\n");
 
                 try
                 {
@@ -27,7 +27,7 @@ namespace Task2___Present
                 }
                 catch (FormatException)
                 {
-                    Console.WriteLine("No such option! Please, try again or press 0 to exit!");
+                    Console.WriteLine("No such option! Please, try again or press 0 to exit!\n");
                     Console.ReadLine();
                     choice = -1;
                 }
@@ -35,7 +35,7 @@ namespace Task2___Present
                 switch (choice)
                 {
                     case 1:           
-                        CreatePresent();
+                        Present.CreatePresent();
                         break;
 
                     case 2:
@@ -43,7 +43,7 @@ namespace Task2___Present
                         break;
 
                     case 3:
-                        present.FindByWeight();
+                        present.FindByPrice();
                         break;
 
                     case 4:
@@ -57,121 +57,6 @@ namespace Task2___Present
 
             }
             Console.ReadLine();
-        }
-
-        // Adds sweets according to the user's input
-        public double presentWeight { get; set; }
-        public void CreatePresent()
-        {
-            int menu_choice = -1;
-            string noCategory = "No such category!";
-            string noSweet = "No such sweets in the chosen category!";
-
-            while (menu_choice != 0)
-            {
-                Console.WriteLine("Select a sweet category, please:");
-                Console.WriteLine("1. Caramel");
-                Console.WriteLine("2. Chocolate");
-                Console.WriteLine("0. Show the main menu");
-                try
-                {
-                    menu_choice = Convert.ToInt32(Console.ReadLine());
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine(noCategory);
-                    Console.ReadLine();
-                    menu_choice = -1;
-                }
-
-                switch (menu_choice)
-                {
-                    case 1:
-                        Console.WriteLine("Select a sweet: 1. Dyushes, 2. Barbaris");
-                        try
-                        {
-                            int option = Convert.ToInt32(Console.ReadLine());
-                            switch (option)
-                            {
-                                case 1:
-                                    {
-                                        Dyushes sweet = new Dyushes();
-                                        present.AddSweet(sweet);
-                                        presentWeight += sweet.sweetWeight;
-                                        break;
-                                    }
-                                case 2:
-                                    {
-                                        Barbaris sweet = new Barbaris();
-                                        present.AddSweet(sweet);
-                                        presentWeight += sweet.sweetWeight;
-                                        break;
-                                    }
-                                default:
-                                    {
-                                        Console.WriteLine(noSweet);
-                                        Console.ReadLine();
-                                        menu_choice = -1;
-                                        break;
-                                    }
-                            }
-
-                        }
-                        catch (FormatException)
-                        {
-                            Console.WriteLine(noCategory);
-                            Console.ReadLine();
-                            menu_choice = -1;
-                        }
-
-                        break;
-                    case 2:
-                        Console.WriteLine("Select a sweet: 1. Alyonka, 2. Minchanka");
-                        try
-                        {
-                            int option2 = Convert.ToInt32(Console.ReadLine());
-                            switch (option2)
-                            {
-                                case 1:
-                                    {
-                                        Alyonka sweet = new Alyonka();
-                                        present.AddSweet(sweet);
-                                        presentWeight += sweet.sweetWeight;
-                                        break;
-                                    }
-                                case 2:
-                                    {
-                                        Minchanka sweet = new Minchanka();
-                                        present.AddSweet(sweet);
-                                        presentWeight += sweet.sweetWeight;
-                                        break;
-                                    }
-                                default:
-                                    {
-                                        Console.WriteLine(noSweet);
-                                        Console.ReadLine();
-                                        menu_choice = -1;
-                                        break;
-                                    }
-                            }
-
-                        }
-                        catch (FormatException)
-                        {
-                            Console.WriteLine(noCategory);
-                            Console.ReadLine();
-                            menu_choice = -1;
-                        }
-                        break;
-                    case 0:
-                        menu_choice = 0;
-                        break;
-
-                    default:
-                        Console.WriteLine(noCategory);
-                        break;
-                }
-            }
-        }
+        }      
     }
 }

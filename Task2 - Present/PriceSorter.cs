@@ -6,11 +6,11 @@ namespace Task2___Present
     {
         public int Compare(Sweet x, Sweet y)
         {
-            if (x.price < y.price)
+            if (x.Price > y.Price)
             {
                 return 1;
             }
-            else if (x.price > y.price)
+            else if (x.Price < y.Price)
             {
                 return -1;
             }
